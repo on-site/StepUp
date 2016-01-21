@@ -1,0 +1,9 @@
+language: ruby
+bundler_args: "--binstubs --jobs=3 --retry=3"
+before_install: gem install bundler -v 1.11.2
+cache: bundler
+script:
+- bundle exec rake
+notifications:
+  slack:
+    secure: gglda9Zxj+aiMgv9j6MpR+lMYVE0Lp/HY6MDb3R5kRIa5LXFMqJ27Z4TcNJu41hAhAJcCMnXqX2pPN2cPeP5iDV4l7h83mJ6HI/Sm+q0/svKKhSGDwIvI4NC8wv+4v1M5V19EO1JgTFPHTX1EEfNfBekxhEAuvUTIzVwkkXoN6at/6/Topnqw9IGHFjUN0YrTBivXe4EndDeL5kxY7sQtzDxZFwZ9UWMiezl55yK55u98cqrxkfMl+mPPccOJlEzS2ZzHvHSlJWoDsTiTTOgylSPrZiFv1eK5K4yo2M234PbJQ3LFKUZi0/XXKb1cXcY/b5XV13h4ZTX0l3Ya7rO7T723vGAQOXn8F6EzJBgla1Qh7tddIFAJUFD6tJ4bjFJC3AEDRGFpuFHVXB+9Xk3v6L7e2evr750bfFi3Uad4LCQ3Vxt402Lyq2NN0QRu7dGmWXwBh4FSvW58KgLq9LAfFzH8vNnDO4jP23i+E3Hs6wvCZKWQXFge2kIPa2DQ+M1H/R/S/bKbvMj6oRfGNH6aYv5YQ8mGaLG8B61NOLd7IlUdYffaPeBbou1q5oQuFUb1+tePf3owynD5e6UQ0H8yix513zFly7PFCMX6wW6OlvBuRKzoi02sn83rRioWwHMz/RA2yk60LaitLOVDJnYqhr8E4yu5hnjwyXAW+wSyOI=
